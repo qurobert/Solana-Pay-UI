@@ -1,0 +1,79 @@
+.root {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #ff00ff;
+}
+
+.memecoinsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.memecoinCard {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.memecoinCard:hover {
+    transform: scale(1.05);
+}
+
+.memecoinIcon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.memecoinName {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.memecoinPrice {
+    font-size: 18px;
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+.quantityControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantityButton {
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantityButton:hover {
+    background-color: #ff66ff;
+}
+
+.quantity {
+    font-size: 20px;
+    font-weight: bold;
+}
