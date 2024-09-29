@@ -30,6 +30,7 @@ export const PaymentProvider: FC<PaymentProviderProps> = ({ children }) => {
     const [reference, setReference] = useState<PublicKey>();
     const [status, setStatus] = useState(PaymentStatus.New);
     const navigate = useNavigateWithQuery();
+    const [progress, setProgress] = useState(0);
 
     const url = useMemo(() => {
         if (!amount || !reference) return;
@@ -93,6 +94,7 @@ export const PaymentProvider: FC<PaymentProviderProps> = ({ children }) => {
                 setMemo,
                 reference,
                 status,
+                progress,
                 url,
                 reset,
                 generate,

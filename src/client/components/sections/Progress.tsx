@@ -13,7 +13,9 @@ export const Progress: FC = () => {
                 return [1, 'Complete'];
             case PaymentStatus.Confirmed:
             case PaymentStatus.Valid:
-                return progress >= 1 ? [1, 'Complete'] : [progress, Math.floor(progress * 100) + '%'];
+                return [progress, `${Math.floor(progress * 100)}%`];
+            case PaymentStatus.Pending:
+                return [0, 'Pending'];
             default:
                 return [0, status];
         }

@@ -19,6 +19,7 @@ export interface PaymentContextState {
     setMemo(memo: string | undefined): void;
     reference: PublicKey | undefined;
     status: PaymentStatus;
+    progress: number;
     url: URL | undefined;
     reset(): void;
     generate(): void;
