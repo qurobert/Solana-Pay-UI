@@ -20,7 +20,7 @@ export interface PaymentContextState {
     reference: PublicKey | undefined;
     status: PaymentStatus;
     progress: number;
-    url: URL | undefined;
+    url: string | URL;
     reset(): void;
     generate(): void;
 }
